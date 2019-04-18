@@ -1,9 +1,158 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Fake Amazon</title>
-    </head>
-    <body>
-        <h2>Fake Amazon - Development - Feature One</h2>
-    </body>
+
+<head>
+    <title>Fake Amazon</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #EAEDED;
+        }
+
+        .header-container {
+            background-color: black;
+            height: 110px;
+        }
+
+        .top-bar {
+            background-color: blue;
+            height: 50px;
+            background-image: url('./img/sm_top_bar.jpg');
+            background-size: cover;
+        }
+
+        .top-nav {
+            background-color: #232F3E;
+            height: 60px;
+        }
+
+        .top-left,
+        .top-right,
+        .top-middle {
+            height: 100%;
+        }
+
+        .top-left {
+            width: 110px;
+            float: left;
+        }
+
+        .top-left>img,
+        .top-right>img {
+            height: 60px;
+        }
+
+        .top-middle {
+            width: calc(100% - 410px);
+            float: left;
+            text-align: center;
+        }
+
+        .top-search {
+            width: 500px;
+            margin-top: 5px;
+        }
+        .top-nav-items {
+            text-align: left;
+            margin-top: 18px;
+            margin-left: 70px;
+        }
+        .top-nav-items > li {
+            display: inline-block;
+        }
+        .top-nav-items > li > a {
+            font-size: 8px;
+            text-decoration: none;
+            color: #FFF;
+            padding: 4px;
+        }
+        .top-nav-items > li:hover {
+            border: 1px solid #FFF;
+            border-radius: 5px;
+        }
+        .top-search-button {
+            background-color: #FEBD69;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+        .top-right {
+            width: 300px;
+            float: right;
+            overflow: hidden;
+        }
+
+        .top-right>img {
+            background-position: 30px 0px;
+        }
+
+        .main-body {
+            width: 90vw;
+            min-height: 800px;
+            background-color: brown;
+            margin: 0px auto;
+        }
+
+        .footer-sidebar-container {
+            width: 100vw;
+            min-height: 500px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="top-bar"></div>
+        <div class="top-nav">
+            <div class="top-left">
+                <img src="./img/sm_left.jpg" alt="top left">
+            </div>
+            <div class="top-middle">
+                <input type="text" class="top-search">
+                <button type="button" class="top-search-button">Search</button>
+                <ul class="top-nav-items">
+                    <li>
+                        <a href="#">Your Amazon.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Today's Deals</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                    <li>
+                        <a href="#">Whole Foods</a>
+                    </li>
+                    <li>
+                        <a href="#">Registry</a>
+                    </li>
+                    <li>
+                        <a href="#">Sell</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-right">
+                <img src="./img/sm_right.jpg" alt="top right">
+            </div>
+        </div>
+    </header>
+    <div class="main-body">
+        Main Body
+    </div>
+    <div class="footer-sidebar-container">
+        Footer Side Bar Container
+    </div>
+</body>
+
 </html>
