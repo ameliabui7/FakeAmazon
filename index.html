@@ -17,6 +17,10 @@
             background-color: #EAEDED;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         .header-container {
             background-color: black;
             height: 110px;
@@ -57,32 +61,39 @@
         }
 
         .top-search {
-            width: 500px;
+            width: 800px;
             margin-top: 5px;
         }
+
         .top-nav-items {
             text-align: left;
-            margin-top: 18px;
+            margin-top: 15px;
             margin-left: 70px;
         }
-        .top-nav-items > li {
+
+        .top-nav-items>li {
             display: inline-block;
+            margin-right: 5px;
         }
-        .top-nav-items > li > a {
-            font-size: 8px;
+
+        .top-nav-items>li>a {
+            font-size: 12px;
             text-decoration: none;
             color: #FFF;
-            padding: 4px;
+            display: block;
         }
-        .top-nav-items > li:hover {
+
+        .top-nav-items>li>a:hover {
             border: 1px solid #FFF;
-            border-radius: 5px;
+            border-radius: 2px;
         }
+
         .top-search-button {
             background-color: #FEBD69;
             border-top-right-radius: 2px;
             border-bottom-right-radius: 2px;
         }
+
         .top-right {
             width: 300px;
             float: right;
@@ -94,10 +105,91 @@
         }
 
         .main-body {
-            width: 90vw;
+            width: 80vw;
             min-height: 800px;
-            background-color: brown;
+            background-color: transparent;
             margin: 0px auto;
+        }
+
+        .main-top-container>img {
+            max-width: 100%;
+        }
+
+        .main-top-items {
+            text-align: center;
+            margin-top: -200px;
+        }
+
+        .main-top-items>li {
+            display: inline-block;
+            background-color: #FFF;
+            width: 20%;
+            text-align: center;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .main-top-items>li:last-child {
+            background-color: transparent;
+        }
+
+        .btn-sign-in {
+            background-color: #F0C14B;
+            border-radius: 1px;
+            border-color: #A88734 #9C7E31 #846A29;
+            color: #111;
+            font-size: 10px;
+            padding: 3px 20px;
+            width: 100%;
+        }
+
+        .last-child {
+            background-color: white;
+            display: inline-block;
+            padding: 10px;
+            margin-bottom: 22px;
+        }
+
+        .main-top-items>li>img,
+        .main-bottom-container>li>img {
+            max-width: 100%;
+        }
+
+        .main-top-items>li>h2,
+        .main-top-items>li>span>h2 {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        .main-top-items>li>p,
+        .main-top-items>li>a {
+            font-size: 10px;
+        }
+
+        .main-bottom-container {
+            width: 100%;
+            list-style-type: none;
+        }
+
+        .main-bottom-container>li {
+            width: 100%;
+            background-color: white;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+
+        .bg-gradient {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4e12fe+23,4e12fe+23,9677f5+50,eaeded+73 */
+            background: #4e12fe;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #4e12fe 23%, #4e12fe 23%, #9677f5 50%, #eaeded 73%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #4e12fe 23%, #4e12fe 23%, #9677f5 50%, #eaeded 73%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #4e12fe 23%, #4e12fe 23%, #9677f5 50%, #eaeded 73%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e12fe', endColorstr='#eaeded', GradientType=0);
+            /* IE6-9 */
         }
 
         .footer-sidebar-container {
@@ -148,7 +240,48 @@
         </div>
     </header>
     <div class="main-body">
-        Main Body
+        <div class="main-top-container">
+            <img src="./img/bg_cover.jpg" alt="banner">
+            <ul class="main-top-items bg-gradient">
+                <li>
+                    <h2>Find the perfect gift</h2>
+                    <img src="./img/sm_img1.JPG" alt="img 1">
+                    <p>Send love, spread love</p>
+                    <a href="#">See all Valentine's Day gifts</a>
+                </li>
+                <li>
+                    <h2>Bargain Finds</h2>
+                    <img src="./img/sm_img2.JPG" alt="img 2">
+                    <p>Device accessories</p>
+                    <a href="#">See more</a>
+                </li>
+                <li>
+                    <h2>Explore live plants</h2>
+                    <img src="./img/sm_img3.JPG" alt="img 3">
+                    <p>Brighten your space with live greenery</p>
+                    <a href="#">Shop now</a>
+                </li>
+                <li>
+                    <span class="last-child">
+                        <h2>Find the perfect gift</h2>
+                        <button class="btn-sign-in" type="button">Sign in Security</button>
+                    </span>
+
+                    <img src="./img/sm_img4.JPG" alt="img 4">
+                </li>
+            </ul>
+        </div>
+        <ul class="main-bottom-container">
+            <li>
+                <img src="./img/bg_banner1.JPG" alt="img 1">
+            </li>
+            <li>
+                <img src="./img/bg_banner2.JPG" alt="img 2">
+            </li>
+            <li>
+                <img src="./img/bg_banner3.JPG" alt="img 3">
+            </li>
+        </ul>
     </div>
     <div class="footer-sidebar-container">
         Footer Side Bar Container
